@@ -16,6 +16,8 @@ RUN echo "Yes, do as I say!" | apt-get purge \
     libudev1 \
     tzdata
 
+RUN apt-get install python python-pip
+
 RUN apt-get autoremove -y
 
 COPY runlevel /sbin/runlevel

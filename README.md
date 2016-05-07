@@ -22,3 +22,5 @@ This is possible by the removal of packages that are not required in a container
 - bash
 
 This was created as a subtree split from https://github.com/kubernetes/contrib/tree/master/images/ubuntu-slim with `git subtree split --prefix=images/ubuntu-slim -b ubuntu-slim`.
+
+This branch adds python and pip.

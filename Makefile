@@ -1,9 +1,9 @@
 all: push
 
-TAG ?= 0.2
-PREFIX ?= gcr.io/google_containers/ubuntu-slim
-BUILD_IMAGE ?= ubuntu-build
-TAR_FILE ?= rootfs.tar
+TAG ?= latest
+PREFIX ?= quay.io/mozmar/ubuntu-slim-python
+BUILD_IMAGE ?= ubuntu-build-python
+TAR_FILE ?= rootfs-python.tar
 
 container:
 	docker build -t $(BUILD_IMAGE) -f Dockerfile.build .
